@@ -21,7 +21,7 @@ public class DBConnection {
     // jdbc url parts
     private static final String protocol = "jdbc";
     private static final String vendorName = ":mysql:";
-    private static final String ipAddress = "//3.227.166.251/U05eUD";
+    private static final String ipAddress = "SERVER NAME/IP ADDRESS HERE";
 
     // jdbc url
     private static final String jdbcURL = protocol + vendorName + ipAddress;
@@ -30,8 +30,8 @@ public class DBConnection {
     private static final String mySQLJDBCDriver = "com.mysql.jdbc.Driver";
     private static Connection conn = null;
 
-    private static final String username = "U05eUD";
-    private static final String password = "53688482960";
+    private static final String username = "USERNAME HERE";
+    private static final String password = "PASSWORD HERE";
 
     public static Connection startConnection() {
         try {
