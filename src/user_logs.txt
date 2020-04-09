@@ -1,0 +1,1 @@
+Logs append to this text file
