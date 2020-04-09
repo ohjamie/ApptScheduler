@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="266.0" prefWidth="450.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="View_Controller.LogIn">
+   <children>
+      <Label fx:id="welcomeLabel" layoutX="173.0" layoutY="26.0" text="Welcome">
+         <font>
+            <Font name="Georgia Bold" size="29.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="67.0" layoutY="100.0" prefHeight="141.0" prefWidth="316.0">
+         <children>
+            <Label fx:id="usernameLabel" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="18.0" layoutY="19.0" text="Username" textAlignment="RIGHT" />
+            <TextField fx:id="usernameInput" layoutX="138.0" layoutY="14.0" />
+            <Label fx:id="passwordLabel" layoutX="19.0" layoutY="57.0" text="Password" />
+            <PasswordField fx:id="passwordInput" layoutX="138.0" layoutY="52.0" />
+            <Button fx:id="loginButton" layoutX="206.0" layoutY="100.0" mnemonicParsing="false" onMouseClicked="#authenticate" text="Log in" />
+         </children>
+      </AnchorPane>
+      <Label fx:id="locationLabel" layoutX="122.0" layoutY="77.0" text="Location:" />
+      <Label fx:id="languageLabel" layoutX="252.0" layoutY="77.0" text="Language:" />
+   </children>
+</AnchorPane>

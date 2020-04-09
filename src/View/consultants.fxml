@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="437.0" prefWidth="640.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="View_Controller.Consultants">
+   <children>
+      <Label layoutX="35.0" layoutY="34.0" text="Consultants">
+         <font>
+            <Font name="Georgia Bold" size="24.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="allView" layoutX="429.0" layoutY="40.0" mnemonicParsing="false" onMouseClicked="#switchToAllView" text="All">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="monthView" layoutX="482.0" layoutY="40.0" mnemonicParsing="false" onMouseClicked="#switchToMonthView" text="Month">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="weekView" layoutX="552.0" layoutY="40.0" mnemonicParsing="false" onMouseClicked="#switchToWeekView" text="Week">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </RadioButton>
+      <TableView fx:id="consultantsTable" layoutX="35.0" layoutY="74.0" prefHeight="310.0" prefWidth="149.0">
+         <columns>
+            <TableColumn fx:id="consultantName" prefWidth="148.0" text="Name" />
+         </columns>
+      </TableView>
+      <Button fx:id="backButton" layoutX="566.0" layoutY="400.0" mnemonicParsing="false" onMouseClicked="#returnToDash" text="Back">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Button>
+      <TableView fx:id="calendarTable" layoutX="223.0" layoutY="73.0" onMouseClicked="#toAppt" prefHeight="312.0" prefWidth="384.0">
+         <columns>
+            <TableColumn fx:id="dateCol" prefWidth="134.5" text="Date" />
+            <TableColumn fx:id="apptCol" prefWidth="116.5" text="Appointment" />
+            <TableColumn fx:id="customerCol" prefWidth="132.0" text="Customer" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

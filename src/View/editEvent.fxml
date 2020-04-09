@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="545.0" prefWidth="447.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="View_Controller.EditEvent">
+   <children>
+      <Label layoutX="38.0" layoutY="39.0" text="Edit Appointment">
+         <font>
+            <Font name="Georgia Bold" size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="saveButton" layoutX="280.0" layoutY="480.0" mnemonicParsing="false" onMouseClicked="#updateEvent" text="Save">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Button>
+      <Button fx:id="cancelButton" layoutX="333.0" layoutY="480.0" mnemonicParsing="false" onMouseClicked="#returnToDash" text="Cancel">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Button>
+      <Button fx:id="deleteButton" layoutX="137.0" layoutY="480.0" mnemonicParsing="false" onMouseClicked="#deleteEvent" text="Delete">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Button>
+      <AnchorPane layoutX="53.0" layoutY="79.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="392.0" prefWidth="342.0">
+         <children>
+            <Label layoutX="65.0" layoutY="113.0" text="Start Date" />
+            <DatePicker fx:id="startDateInput" layoutX="140.0" layoutY="108.0" />
+            <Label layoutX="64.0" layoutY="155.0" text="Start Time" />
+            <Label layoutX="21.0" layoutY="28.0" text="Appointment Type" />
+            <TextField fx:id="apptTypeInput" layoutX="140.0" layoutY="23.0" prefHeight="27.0" prefWidth="188.0" />
+            <Label layoutX="33.0" layoutY="70.0" text="Customer Name" />
+            <ChoiceBox fx:id="customerNameInput" layoutX="140.0" layoutY="65.0" prefHeight="27.0" prefWidth="188.0" />
+            <Label layoutX="68.0" layoutY="198.0" text="End Date" />
+            <DatePicker fx:id="endDateInput" layoutX="140.0" layoutY="193.0" />
+            <Label layoutX="67.0" layoutY="240.0" text="End Time" />
+            <Label fx:id="updatedByText" alignment="CENTER_RIGHT" layoutX="181.0" layoutY="284.0" text="Updated By" AnchorPane.rightAnchor="14.5" />
+            <Label fx:id="createdOnText" alignment="CENTER_RIGHT" layoutX="140.0" layoutY="361.0" text="Created On" AnchorPane.rightAnchor="15.5" />
+            <Label fx:id="createdByText" alignment="CENTER_RIGHT" layoutX="180.0" layoutY="334.0" text="Created by" AnchorPane.rightAnchor="15.5" />
+            <Label fx:id="updatedOnText" alignment="CENTER_RIGHT" layoutX="141.0" layoutY="309.0" text="Updated On" AnchorPane.rightAnchor="15.5" />
+            <ChoiceBox fx:id="startHourInput" layoutX="139.0" layoutY="151.0" prefHeight="27.0" prefWidth="63.0" />
+            <ChoiceBox fx:id="startMinInput" layoutX="206.0" layoutY="151.0" prefHeight="27.0" prefWidth="63.0" />
+            <ChoiceBox fx:id="endHourInput" layoutX="140.0" layoutY="236.0" prefHeight="27.0" prefWidth="63.0" />
+            <ChoiceBox fx:id="endMinInput" layoutX="206.0" layoutY="236.0" prefHeight="27.0" prefWidth="63.0" />
+            <ChoiceBox fx:id="startAmPmInput" layoutX="272.0" layoutY="151.0" prefHeight="27.0" prefWidth="57.0" />
+            <ChoiceBox fx:id="endAmPmInput" layoutX="272.0" layoutY="236.0" prefHeight="27.0" prefWidth="57.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

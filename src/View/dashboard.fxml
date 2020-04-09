@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="421.0" prefWidth="820.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="View_Controller.Dashboard">
+   <children>
+      <AnchorPane prefHeight="421.0" prefWidth="188.0">
+         <children>
+            <Label layoutX="24.0" layoutY="38.0" text="Hello,">
+               <font>
+                  <Font name="Georgia Bold" size="25.0" />
+               </font>
+            </Label>
+            <Label fx:id="consultant" layoutX="24.0" layoutY="68.0" text="User">
+               <font>
+                  <Font name="Georgia Bold" size="25.0" />
+               </font>
+            </Label>
+            <Text fx:id="appointmentLabel" layoutX="31.0" layoutY="140.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Appointments this month:">
+               <font>
+                  <Font size="12.0" />
+               </font></Text>
+            <Text fx:id="apptType1" layoutX="31.0" layoutY="167.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Type 1:">
+               <font>
+                  <Font size="12.0" />
+               </font></Text>
+            <Text fx:id="apptType2" layoutX="31.0" layoutY="191.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Type 2:">
+               <font>
+                  <Font size="12.0" />
+               </font></Text>
+            <Text fx:id="otherApptType" layoutX="32.0" layoutY="214.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Other:  ">
+               <font>
+                  <Font size="12.0" />
+               </font>
+            </Text>
+            <Button fx:id="customers" layoutX="24.0" layoutY="257.0" mnemonicParsing="false" onMouseClicked="#toCustomers" text="Manage Customers">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Button>
+            <Button fx:id="consultants" layoutX="24.0" layoutY="292.0" mnemonicParsing="false" onMouseClicked="#toConsultants" text="Manage Consultants">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <Label fx:id="month" layoutX="188.0" layoutY="45.0" text="">
+         <font>
+            <Font name="Georgia Bold" size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="updateAppt" layoutX="637.0" layoutY="45.0" mnemonicParsing="false" onMouseClicked="#toEditApptButton" text="Update">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Button>
+      <Button fx:id="addEventButton" layoutX="703.0" layoutY="45.0" mnemonicParsing="false" onMouseClicked="#addEvent" text="+ Event">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Button>
+      <RadioButton fx:id="allView" layoutX="433.0" layoutY="48.0" mnemonicParsing="false" onMouseClicked="#switchToAllView" text="All">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="monthView" layoutX="485.0" layoutY="48.0" mnemonicParsing="false" onMouseClicked="#switchToMonthView" text="Month">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="weekView" layoutX="553.0" layoutY="48.0" mnemonicParsing="false" onMouseClicked="#switchToWeekView" text="Week">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </RadioButton>
+      <TableView fx:id="calendarTable" layoutX="188.0" layoutY="88.0" onMouseClicked="#toEditAppt" prefHeight="299.0" prefWidth="593.0">
+        <columns>
+          <TableColumn fx:id="startCol" prefWidth="126.0" text="Start" />
+            <TableColumn fx:id="endCol" prefWidth="127.0" text="End" />
+            <TableColumn fx:id="customerCol" prefWidth="121.0" text="Customer" />
+            <TableColumn fx:id="typeCol" prefWidth="113.0" text="Type" />
+            <TableColumn fx:id="consultantCol" prefWidth="105.0" text="Consultant" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
