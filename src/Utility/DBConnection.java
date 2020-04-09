@@ -6,15 +6,14 @@ import Model.*;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.scene.control.Alert;
-
 import static Utility.Localization.FormatTimeForDB;
 import static Utility.Localization.localTimeToUTC;
 
-/** This section pertains to anything that has to do with accessing or mutating data in the database
- * Server name: 3.227.166.251
- * Database name: U05eUD
- * Username: U05eUD
- * Password: 53688482960
+/** This section connects to a mySQL database
+ * YOU NEED THE FOLLOWIN INFO TO MAKE A CONNECTION
+ * Server name/IP Address
+ * Database name
+ * Username & Password
  */
 
 public class DBConnection {
