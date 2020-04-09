@@ -1,5 +1,5 @@
 # ApptScheduler
-Java II Class Project: Appointment Scheduler
+Java II Class Project (Draft): Appointment Scheduler
 
 Initial Draft
 
